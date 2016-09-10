@@ -104,7 +104,7 @@
       lower.push('white');
     }
     var height, width;
-
+    var count;
     var switch_color = false;
     function setup() {
         console.log(windowWidth, windowHeight);
@@ -116,6 +116,7 @@
         noStroke();
         smooth();
         frameRate(20);
+        count = frameCount;
     }
 
     function draw() {
@@ -143,6 +144,12 @@
       } else{
         upper[0] = '#DB333F';
       }
+      count ++ ;
+      if(count%50 == 0){
+        console.log(count);
+        resizeCanvas(windowWidth, windowHeight);
+      }
+
       background(255);
 
       if(windowWidth < 700){
