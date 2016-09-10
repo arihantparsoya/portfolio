@@ -29,7 +29,6 @@
         arr = reverseArr(arr, 0, l - 1);
         arr = reverseArr(arr, 0, k - 1);
         arr = reverseArr(arr, k, l - 1);
-        //console.log(arr);
         return arr;
     }
 
@@ -84,7 +83,6 @@
       {r : 100, angle : 70, width : 7},
       {r : 50, angle : 70, width : 5},
 
-      //{r : 160, angle : -30, width : 20, color : 'black'},
     ];
     var vertebrae = [
       //antena
@@ -107,7 +105,6 @@
     var count;
     var switch_color = false;
     function setup() {
-        console.log(windowWidth, windowHeight);
         if(windowWidth < 700){
           canvas = createCanvas(windowWidth, Math.max(windowWidth, windowHeight));
         }
@@ -115,7 +112,6 @@
           canvas = createCanvas(windowWidth, windowHeight);
         }
         canvas.parent('sketch-holder');
-        //background(255, 0, 200);
         angleMode(DEGREES);
         ellipseMode(CENTER);
         noStroke();
@@ -125,15 +121,14 @@
     }
 
     function draw() {
+
       count ++;
       if(windowWidth < 700 & windowHeight < windowWidth){
         print('here')
         background(255);
-        //resizeCanvas(0, 0);
         if(count%20 == 0){
             resizeCanvas(0, 0);
         }
-        //return false;
       }
       function reverseArr(arr, left, right) {
           while (left < right) {
@@ -158,10 +153,8 @@
       } else{
         upper[0] = '#DB333F';
       }
-      //count ++ ;
       if(count%20 == 0){
         if(windowWidth < 700){
-          //print('here')
           resizeCanvas(windowWidth, Math.max(windowWidth, windowHeight));
         }
         else{
@@ -200,7 +193,6 @@
           var y = map(vertebrae[i].r * sin(vertebrae[i].angle), 0, dimension.y, 0, windowHeight);
           var w = map(vertebrae[i].width, 0, dimension.y, 0, min(windowHeight, windowWidth));
           ellipse(x, y, w, w);
-          //ellipse(-x, y, w, w);
       }
       noFill();
       stroke(0);
@@ -213,10 +205,8 @@
       var y3 = map(vertebrae[1].r * sin(vertebrae[1].angle), 0, dimension.y, 0, windowHeight);
       var x4 = map(vertebrae[0].r * cos(vertebrae[0].angle - 30), 0, dimension.x, 0, windowWidth);
       var y4 = map(vertebrae[0].r * sin(vertebrae[0].angle - 30), 0, dimension.y, 0, windowHeight);
-      //line(x1,y1,x2,y2);
       curve(x3,y3, x0, y0, x2, y2, x4, y4);
       curve(-x3,y3, -x0, y0, -x2, y2, -x4, y4);
-      //bezier(vertebrae[0].r * cos(vertebrae[0].angle), vertebrae[0].r * sin(vertebrae[0].angle), );
       pop();
     }
 
