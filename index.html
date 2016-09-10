@@ -152,7 +152,7 @@
       count ++ ;
       if(count%20 == 0){
         if(windowWidth < 700){
-          resizeCanvas(windowWidth, Math.max(windowWidth, windowHeight));
+          resizeCanvas(windowWidth, 1.3*Math.max(windowWidth, windowHeight));
         }
         else{
           resizeCanvas(windowWidth, windowHeight);
