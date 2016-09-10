@@ -108,7 +108,12 @@
     var switch_color = false;
     function setup() {
         console.log(windowWidth, windowHeight);
-        canvas = createCanvas(windowWidth, windowHeight);
+        if(windowWidth < 700){
+          canvas = createCanvas(windowWidth, Math.max(windowWidth, windowHeight));
+        }
+        else{
+          canvas = createCanvas(windowWidth, windowHeight);
+        }
         canvas.parent('sketch-holder');
         //background(255, 0, 200);
         angleMode(DEGREES);
@@ -145,9 +150,14 @@
         upper[0] = '#DB333F';
       }
       count ++ ;
-      if(count%50 == 0){
-        console.log(count);
-        resizeCanvas(windowWidth, windowHeight);
+      if(count%20 == 0){
+        if(windowWidth < 700){
+          resizeCanvas(windowWidth, Math.max(windowWidth, windowHeight));
+        }
+        else{
+          resizeCanvas(windowWidth, windowHeight);
+        }
+        //resizeCanvas(windowWidth, windowHeight);
       }
 
       background(255);
