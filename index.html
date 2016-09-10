@@ -106,17 +106,23 @@
 
     var switch_color = false;
     function setup() {
+        console.log(windowWidth, windowHeight);
         canvas = createCanvas(windowWidth, windowHeight);
         canvas.parent('sketch-holder');
         //background(255, 0, 200);
-        var height;
-        if(windowWidth < 500){
+        var height, width;
+        if(windowWidth < 700){
+          //height = Math.min(windowHeight, windowWidth);
           height = windowHeight;
+          width = Math.max(windowHeight, windowWidth);
+          console.log('min');
         } else{
           height = windowHeight;
+          //width = Math.max(windowHeight, windowWidth);
+          width = windowWidth;
         }
         dimension = {
-          x: windowWidth,
+          x: width,
           y: height,
         };
         angleMode(DEGREES);
@@ -161,7 +167,7 @@
           fill(upper[i]);
           var x = map(rawdata_upper[i].r * cos(rawdata_upper[i].angle), 0, dimension.x, 0, windowWidth);
           var y = map(rawdata_upper[i].r * sin(rawdata_upper[i].angle), 0, dimension.y, 0, windowHeight);
-          var w = map(rawdata_upper[i].width, 0, dimension.y, 0, windowHeight);
+          var w = map(rawdata_upper[i].width, 0, dimension.y, 0, min(windowHeight, windowWidth));
           ellipse(x, y, w, w);
           ellipse(-x, y, w, w);
       }
@@ -169,7 +175,7 @@
           fill(vertebrae[i].color);
           var x = map(vertebrae[i].r * cos(vertebrae[i].angle), 0, dimension.x, 0, windowWidth);
           var y = map(vertebrae[i].r * sin(vertebrae[i].angle), 0, dimension.y, 0, windowHeight);
-          var w = map(vertebrae[i].width, 0, dimension.y, 0, windowHeight);
+          var w = map(vertebrae[i].width, 0, dimension.y, 0, min(windowHeight, windowWidth));
           ellipse(x, y, w, w);
           //ellipse(-x, y, w, w);
       }
