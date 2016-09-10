@@ -103,6 +103,7 @@
       upper.push('white');
       lower.push('white');
     }
+    var height, width;
 
     var switch_color = false;
     function setup() {
@@ -110,21 +111,6 @@
         canvas = createCanvas(windowWidth, windowHeight);
         canvas.parent('sketch-holder');
         //background(255, 0, 200);
-        var height, width;
-        if(windowWidth < 700){
-          //height = Math.min(windowHeight, windowWidth);
-          height = windowHeight;
-          width = Math.max(windowHeight, windowWidth);
-          console.log('min');
-        } else{
-          height = windowHeight;
-          //width = Math.max(windowHeight, windowWidth);
-          width = windowWidth;
-        }
-        dimension = {
-          x: width,
-          y: height,
-        };
         angleMode(DEGREES);
         ellipseMode(CENTER);
         noStroke();
@@ -157,11 +143,22 @@
       } else{
         upper[0] = '#DB333F';
       }
-
-      //console.log(upper);
       background(255);
+
+      if(windowWidth < 700){
+        height = windowHeight;
+        width = Math.max(windowHeight, windowWidth);
+      } else{
+        height = windowHeight;
+        width = windowWidth;
+      }
+      dimension = {
+        x: width,
+        y: height,
+      };
+
       push();
-      translate(width/2, height/2);
+      translate(windowWidth/2, windowHeight/2);
       fill(200);
       for(var i = 0;i < rawdata_upper.length ; i++){
           fill(upper[i]);
