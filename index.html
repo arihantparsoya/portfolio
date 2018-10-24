@@ -4,15 +4,12 @@
     <title>Arihant Parsoya</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i,900" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
     html, body{
       margin:0;
       padding: 0;
       font-family: 'Roboto';
-      font-weight: bold;
       font-size: 18px;
     }
     h1{
@@ -24,15 +21,30 @@
       font-weight: 700;
     }
     h4{
-      font-weight: bold;
+      font-weight: medium;
       font-size: 20px;
       color: #00000C;
     }
-    .text-muted{
-      /*color: #28ABE3;*/
-      color: #585e6d;
-      text-align: left;
+    .bullet-discription{
+      padding-left: 40px;
+      max-width: 600px;
     }
+    .text-muted{
+      color: #585e6d;
+      text-align: justify;
+      font-weight: normal;
+      font-size: 17px;
+    }
+    .visible-link{
+        color: #1430a0;
+        font-weight: bold;
+    }
+
+    .project-lebel{
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
     a{
       color:inherit;
     }
@@ -40,37 +52,31 @@
       color: inherit;
       text-decoration: none;
     }
-    .visible-link{
-        color: #1430a0;
-    }
-    @media (max-width: 767px) {
-      #heading{
-        padding-bottom: 0px;
-      }
-    }
+    @media (max-width: 1000px) {
 
-    #cover_image{
-        width: 500px;
     }
     </style>
   </head>
   <body>
 
     <section id="services">
-        <img  src="images/duck.jpg" style="width:100%"/>
+        <img  src="images/duck.png" style="width:100%"/>
     </section>
 
     <section>
         <div class="container">
             <div class="row">
               <h2>About Me</h2>
-              <div class="row">
+              <div class="row text-center">
                 <div class="col-md-2">
-                  <img src="images/photo.jpg" alt="Smiley face" style="width: 100%">
+                  <img src="images/photo.png" alt="Smiley face" style="height:150px; width: 150px; align-self: center;">
                 </div>
                 <div class="col-md-8">
                   <p class="text-muted" style="font-size: 22px;">
-                    I am a programmer currently studying in Indian Institute of Technology Bombay. I am passionate about creating interactive interfaces which enrich user experience. I am interested in Human Computer Interaction and Data Visualization. I love reading non-fiction books.
+                    Hi, I am Arihant Parsoya! I am currently an undergraduate student at Indian Institute of Technology Bombay. I like to work on projects which encompass design and technology.
+                  </p>
+                  <p class="text-muted" style="font-size: 22px;">
+                    I am interested in understanding the human mind and how technology and design can be used to augment our mind while performing tasks.
                   </p>
                 </div>
               </div>
@@ -79,11 +85,13 @@
               <div class="row text-center">
                   <div class="col-md-4">
                       <a href="files/Telecom Paristech Internship Report.pdf" target="_blank"><img src="images/Telecom Paristech Internship.png" alt="Smiley face" style=" height:200px;">
-                      <h4 class="service-heading">Intersection of Multiple Histories Through Transclusion (at Telecom ParisTech)</h4></a>
+                      <h4 class="service-heading">Telecom ParisTech</h4></a>
+                      <div class="project-lebel">Telecom ParisTech, Paris, May - July '18</div>
                       <div class='row'>
-                        <div class="col-md-11">
+                        <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                           <p class="text-muted">
-                              I interned under professor <a href="https://james.eagan.me" class="visible-link">James Eagan</a> at <a href="https://www.telecom-paristech.fr" class="visible-link">Telecom ParisTech</a>. During my internship I worked on various design and technological problems associated with transclusions with histories. I explored secnarios where transclusions with histories can be useful and created tools to explore histories of transclusion.
+                              I interned under professor <a href="https://james.eagan.me" class="visible-link">James Eagan</a> at <a href="https://www.telecom-paristech.fr" class="visible-link">Telecom ParisTech</a>. During my internship, I worked on various design and technological problems associated with <a href="https://en.wikipedia.org/wiki/Transclusion" class="visible-link">transclusion</a> (inclusion of one document into another document by reference) with histories. I explored user scenarios where transclusions with histories can be useful and created tool which can be used to explore histories of transclusion. I used <a href="https://webstrates.net" class="visible-link">Webstrates</a> technology to implement tools for exploring transclusion histories.
 
                               <i><a href="files/Telecom Paristech Internship Report.pdf" class="visible-link">[Report]</a></i>
                           </p>
@@ -93,12 +101,14 @@
                   </div>
 
                   <div class="col-md-4">
-                      <a href="https://summerofcode.withgoogle.com/projects/#6172190325080064" target="_blank"><img src="images/GSoC2017.jpg" alt="Smiley face" style=" height:200px;">
-                      <h4 class="service-heading">Google Summer of Code 2017<br />(Python Software Foundation)</h4></a>
+                      <a href="https://summerofcode.withgoogle.com/projects/#6172190325080064" target="_blank"><img src="images/GSoC2017.png" alt="Smiley face" style=" height:200px;">
+                      <h4 class="service-heading">Google Summer of Code 2017<br /></h4></a>
+                      <div class="project-lebel">Python Software Foundation, May - Aug '17</div>
                       <div class='row'>
-                        <div class="col-md-11">
+                        <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                           <p class="text-muted">
-                            I worked for SymPy during my GSoC program. I Implemented Rule Based Integration (Rubi) module in SymPy using expression pattern matching capabilities of MatchPy.
+                            I worked for <a href="https://www.sympy.org/en/index.html" class="visible-link">SymPy</a> organization during my <a href="https://summerofcode.withgoogle.com" class="visible-link">Google Summer of Code</a> internship. My work focused on implementing <a href="http://www.apmaths.uwo.ca/~arich/" class="visible-link">Rubi</a> (Rule Based Integration) algorithms in SymPy which are more faster and accurate then generic symbolic integration algorithms. I used <a href="https://arxiv.org/abs/1710.06915" class="visible-link">MatchPy</a> library to enable advanced pattern matching capabilities in SymPy and created parsers which was capable of converting Mathematica code to Python. <i><a href="https://summerofcode.withgoogle.com/archive/2017/projects/5013988039458816/" class="visible-link">[Link]</a></i>
                           </p>
                         </div>
                         <div class="col-md-1">                        </div>
@@ -108,26 +118,31 @@
                   <div class="col-md-4">
                       <a href="https://ziptown.in" target="_blank"><img src="images/ziptown.png" alt="Smiley face" style=" height:200px;">
                       <h4 class="service-heading">ZIPTOWN Inc.</h4></a>
+                      <div class="project-lebel">ZIPTOWN Inc., Mumbai, May - Jul '16</div>
                       <div class='row'>
-                        <div class="col-md-11">
+                        <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                           <p class="text-muted">
-                            I interned at ZIPTOWN Inc. as web developer. I implemented real time price extimation of deliveries for web users. I designed front-end for business facing consumers.
+                            I was a web developer intern at ZIPTOWN Inc.. ZIPTOWN is a package delivery startup. I created a web interactive interface which can be used to place orders and track packages on the map. I created an interface which was used to enable customer care and resolve customer enquiries. I also created a website which was customized for business facing customers.
                           </p>
                         </div>
                         <div class="col-md-1">                        </div>
                       </div>
                   </div>
-
               </div>
+
+
               <h2>Projects</h2>
               <div class="row text-center">
                   <div class="col-md-4">
                       <a href="https://docs.google.com/document/d/10xXBdynD_o9NosyB9YAj3oZu09NN3N_DqOXKT35m5u0/edit?usp=sharing" target="_blank"><img src="images/Transitions in Interaction Design.gif" alt="Smiley face" style=" height:200px;">
                       <h4 class="service-heading">Transitions in Interaction Design</h4></a>
+                      <div class="project-lebel">2018</div>
                       <div class='row'>
-                        <div class="col-md-11">
+                        <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                           <p class="text-muted">
-                             A research project done under <a class="visible-link" href="https://info-design-lab.github.io">Prof. Venkatesh Rajamanickam</a>. The project is based on understanding transitions and its principles to improve their usability. In this project we have proposed a new set of principles of transitions based on what they communicates to the user.
+                             A research project done under <a class="visible-link" href="https://info-design-lab.github.io">Prof. Venkatesh Rajamanickam</a>. The project focused on understanding transitions and how they can be used as cognitive tool in interface design. I looked at research done in animation and Psychology of Motion Perception to understand how transitions can be used effectively and proposed a new set of principles which can be used by designers to effectively use transitions while designing interface.
                              <!--
                              <i><a class="visible-link" href="https://docs.google.com/document/d/10xXBdynD_o9NosyB9YAj3oZu09NN3N_DqOXKT35m5u0/edit?usp=sharing">[Report]</a></i>
                              <i><a class="visible-link" href="https://blog.prototypr.io/meaning-of-transitions-a618ba0f104b">[Medium]</a></i>
@@ -139,10 +154,12 @@
                   </div>
                   <div class="col-md-4">
                       <a href="https://info-design-lab.github.io/UP2017/" target="_blank"><img src="images/UP2017.png" alt="Smiley face" style=" height:200px;">
-                      <h4 class="service-heading">Exploring 2017 UP Assembly Election Results</h4></a>
+                      <h4 class="service-heading">Exploring 2017 UP Assembly Elections</h4></a>
+                      <div class="project-lebel">2017</div>
                       <div class='row'>
-                        <div class="col-md-11">
-                            <p class="text-muted">Interactive visualiation tool for analysing Uttar Pradesh(UP) 2017 elections. Visualization analyses of victory margin, voter turnout and party performances in different categories (women, muslim and S.C.) across all constituencies.</p>
+                        <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
+                            <p class="text-muted">Interactive visualization tool for analyzing Uttar Pradesh (UP) 2017 elections. Visualization analyses of victory margin, voter turnout and political party performances in different categories (women, muslim and S.C.) across all constituencies. The tool can be used to analyze the performance of different political parties across years.</p>
                         </div>
                         <div class="col-md-1">                        </div>
                       </div>
@@ -150,10 +167,12 @@
                   <div class="col-md-4">
                       <a href="files/CS419.pdf" target="_blank"><img src="images/cs419.png" alt="Smiley face" style=" height:200px;">
                       <h4 class="service-heading">Colouring Grayscale Images</h4></a>
+                      <div class="project-lebel">2018</div>
                       <div class='row'>
-                        <div class="col-md-11">
+                        <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                           <p class="text-muted">
-                              As part of my Machine Learning course project, I implemented a Convolution Neural Net which is capable of converting grayscale image to coloured image.
+                              Implemented a <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" class="visible-link">Convolution Neural Net</a> which is capable of converting grayscale image to coloured image. Our model used pre-trained <a href="https://arxiv.org/abs/1602.07261" class="visible-link">Inception-ResNet-v2</a> model for feature detection in the images which improved colourization of images.
                               <i><a href="files/CS419.pdf" class="visible-link">[Report]</a></i>
                           </p>
                         </div>
@@ -162,26 +181,31 @@
                   </div>
               </div>
               <br /> <br />
+
               <div class="row text-center">
                   <div class="col-md-4">
                       <a href="https://info-design-lab.github.io/marriage/" target="_blank"><img src="images/Marriage.png" alt="Smiley face" style=" height:200px;">
                       <h4 class="service-heading">30 years of marriages in Singapore</h4></a>
+                      <div class="project-lebel">2016</div>
                       <div class='row'>
-                        <div class="col-md-11">
+                        <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                           <p class="text-muted">
-                            Visual analysis of marriage trends in Singapore from 1984 to 2015 across different categories(age, religion and education background).
+                            Interactive visualization which can be used to analyze the marriage trends in Singapore from 1984 to 2015. The analysis explores in different categories such as age, religion and education backgrounds of both brides and grooms.
                           </p>
                         </div>
                         <div class="col-md-1">                        </div>
                       </div>
                   </div>
                   <div class="col-md-4">
-                      <a href="https://info-design-lab.github.io/52weeks/airport_city_taxi/" target="_blank"><img src="images/Taxi.jpg" alt="Smiley face" style="height:200px;">
+                      <a href="https://info-design-lab.github.io/52weeks/airport_city_taxi/" target="_blank"><img src="images/Taxi.png" alt="Smiley face" style="height:200px;">
                       <h4 class="service-heading">Visualizing Airport-City Taxi Rides</h4></a>
+                      <div class="project-lebel">2018</div>
                       <div class='row'>
-                        <div class="col-md-11">
+                        <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                           <p class="text-muted">
-                            A visualization tool which can be used to visually analyze taxis between airport and city.
+                            A visualization tool which can be used to visually analyze taxi trips between airport and city. The tool allows for exploring trip densities at different times of the day and their durations.
                           </p>
                         </div>
                         <div class="col-md-1">                        </div>
@@ -190,10 +214,12 @@
                   <div class="col-md-4">
                       <a href="http://seniorsurvey.insightiitb.org" target="_blank"><img src="images/Senior Survey.png" alt="Smiley face" style=" height:200px;">
                       <h4 class="service-heading">IITB Senior Survey</h4></a>
+                      <div class="project-lebel">2017</div>
                       <div class='row'>
-                        <div class="col-md-11">
+                        <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                           <p class="text-muted">
-                            Survey report of passing out students of IIT Bombay 2016.
+                            Infographic report of survey conducted of the graduating students of IIT Bombay 2016. The report is an analysis of different aspects of student life at IIT Bombay.
                           </p>
                         </div>
                         <div class="col-md-1">                        </div>
@@ -201,38 +227,47 @@
                     </div>
               </div>
               <br /> <br />
+
             <div class="row text-center">
                 <div class="col-md-4">
                     <a href="https://info-design-lab.github.io/UDISE/" target="_blank"><img src="images/school.png" alt="Smiley face" style=" height:200px;">
                     <h4 class="service-heading">Educational Infrastructure Data Visualization for Maharashtra</h4></a>
+                    <div class="project-lebel">2016</div>
                     <div class='row'>
-                      <div class="col-md-11">
+                      <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                         <p class="text-muted">
-                           Visualisation tool to identify extent of infrastructural facilities available across various geographical areas in the state of Maharashtra.
+                          The visualization is a tool designed to identify extent of infrastructural facilities available across various geographical areas in the state of Maharashtra.
                         </p>
                       </div>
                       <div class="col-md-1">                        </div>
                     </div>
                   </div>
-                <div class="col-md-4">
-                    <a href="https://gsmetres.insightiitb.org/#/gs-cult" target="_blank"><img src="images/gsmetre.jpg" alt="Smiley face" style="height:200px;">
-                    <h4 class="service-heading">IITB GS Metre</h4></a>
+
+                  <div class="col-md-4">
+                    <a href="http://info-design-lab.github.io/52weeks/train_schedule/" target="_blank"><img src="images/railway.png" alt="Smiley face" style="height:200px;">
+                    <h4 class="service-heading">Indian Railway Time Table</h4></a>
+                    <div class="project-lebel">2017</div>
                     <div class='row'>
-                      <div class="col-md-11">
+                      <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                         <p class="text-muted">
-                          General Secretary rating metre of IIT Bombay. Developed using Django.
+                          An interactive tool designed to aid train passengers to plan their trip. The tool helps users to visualize the different train options between two railway stations and their timings.
                         </p>
                       </div>
                       <div class="col-md-1">                        </div>
                     </div>
                   </div>
+ 
                   <div class="col-md-4">
                       <a href="http://placements2015.insightiitb.org" target="_blank"> <img src="images/placements.png" alt="Smiley face" style="height:200px;">
                       <h4 class="service-heading">IITB Placements 2015</h4></a>
+                      <div class="project-lebel">2016</div>
                       <div class='row'>
-                        <div class="col-md-11">
+                        <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                           <p class="text-muted">
-                            IIT Bombay branchwise placement report for year 2015.
+                            Infographic report of company placements held at IIT Bombay in 2015. The visualization analyzes how different departments and student demographics fared in the placements.
                           </p>
                         </div>
                         <div class="col-md-1">                        </div>
@@ -240,14 +275,47 @@
                     </div>
                 </div>
                 <br /> <br />
+
                 <div class="row text-center">
                     <div class="col-md-4">
                         <a href="https://info-design-lab.github.io/accident/" target="_blank"><img src="images/accident.png" alt="Smiley face" style=" height:200px;">
                         <h4 class="service-heading">Accidents by un-natural causes in Indian States and Union Territories</h4></a>
+                        <div class="project-lebel">2017</div>
                         <div class='row'>
-                          <div class="col-md-11">
+                          <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
                             <p class="text-muted">
-                              Visualization of accidents by un-natural causes in India from 2001 to 2013. Analysis compares different types of crimes among Indian states.
+                              Visualization of accidents by un-natural causes in India from 2001 to 2013. Analysis compares different types of crimes among all Indian states.
+                            </p>
+                          </div>
+                          <div class="col-md-1">                        </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <a href="https://info-design-lab.github.io/52weeks/satellite/" target="_blank"><img src="images/satellite.png" alt="Smiley face" style=" height:200px;">
+                        <h4 class="service-heading">Indian Satellites Visualization</h4></a>
+                        <div class="project-lebel">2017</div>
+                        <div class='row'>
+                          <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
+                            <p class="text-muted">
+                              Visual analysis of various attributes of Indian Satellites launched since 2001 till 2013. 
+                            </p>
+                          </div>
+                          <div class="col-md-1">                        </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <a href="https://info-design-lab.github.io/52weeks/movies_revenue/" target="_blank"><img src="images/movies revenue.png" alt="Smiley face" style=" height:200px;">
+                        <h4 class="service-heading">Movies Revenue Analysis (1900-2017)</h4></a>
+                        <div class="project-lebel">2017</div>
+                        <div class='row'>
+                          <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
+                            <p class="text-muted">
+                              Analysis of revenue earned by movies in relation to their budget, runtime, rating and popularity.
                             </p>
                           </div>
                           <div class="col-md-1">                        </div>
@@ -255,54 +323,114 @@
                       </div>
                 </div>
 
-                <h2>Other Projects</h2>
+                <br /> <br />
+                <div class="row text-center">
+                      <div class="col-md-4">
+                        <a href="https://info-design-lab.github.io/52weeks/mental_health/" target="_blank"><img src="images/mental health.png" alt="Smiley face" style=" height:200px;">
+                        <h4 class="service-heading">Mental Health in Tech</h4></a>
+                        <div class="project-lebel">2017</div>
+                        <div class='row'>
+                          <div class="col-md-1">   </div>  
+                        <div class="col-md-10">
+                            <p class="text-muted">
+                              An interactive tool to explore the responses of survey questions. The tool allows to explore the responses of questions in hierarchical manner.
+                            </p>
+                          </div>
+                          <div class="col-md-1">                        </div>
+                        </div>
+                      </div>
+                </div>
+
+
+                <h2>Blogs</h2>
                     <ul>
                       <li>
-                      <h4> <a href='https://info-design-lab.github.io/52weeks/satellite/'> Indian Satellites Visualization</a> </h4>
-                      </li>
-                      <li>
-                      <h4> <a href='https://info-design-lab.github.io/52weeks/movies_revenue/'> Movies Revenue Analysis (1900-2017)</a> </h4>
-                      </li>
-                      <li>
-                      <h4> <a href='http://info-design-lab.github.io/52weeks/train_schedule/'> Indian Railway Time Table</a> </h4>
-                      </li>
-                      <li>
-                      <h4> <a href='https://info-design-lab.github.io/52weeks/mental_health/'> Mental Health in Tech</a> </h4>
+                      <h4>  <a href='https://parsoyaarihant.github.io/blog/'>Google Summer of Code 2017</a> </h4>
+                            <p class="bullet-discription">A weekly blog of my Google Summer of Code internship. This blog summarizes my weekly progress and accomplished milestones during the internship.</p>
                       </li>
                     </ul>
-                    <h2>Blogs</h2>
-                        <ul>
-                          <li>
-                          <h4> <a href='https://parsoyaarihant.github.io/blog/'>Google Summer of Code 2017</a> </h4>
-                          </li>
-                        </ul>
+
+
+                    <h2>Tools</h2>
+                    <ul>
+                      <li>
+                      <h4>Programming </h4>
+                            <p class="bullet-discription">Python, C++, JavaScript, Java, PHP</p>
+                      </li>
+                      <li>
+                      <h4>Development </h4>
+                            <p class="bullet-discription">Android, HTML, CSS, Django, NodeJS</p>
+                      </li>
+                      <li>
+                      <h4>Creative Programming</h4>
+                            <p class="bullet-discription">Processing, Unity, Processing, D3.js, Three.js</p>
+                      </li>
+                      <li>
+                      <h4>Physical Programming</h4>
+                            <p class="bullet-discription">Arduino, Raspberry Pi</p>
+                      </li>
+                      <li>
+                      <h4>Machine Learning </h4>
+                            <p class="bullet-discription">TensorFlow, Keras, MATLAB</p>
+                      </li>
+                    </ul>
+
+                    <h2>Conferences</h2>
+
+
+                    <h2>Papers</h2>
+                    <h3>2018</h3>
+                    <ul>
+                      <li>
+                        <i>[Submitted]</i> <b>Design Principles for Creating Effective Transitions in Interface Design </b>
+                        <br>
+                        Parsoya, A., Venkatesh, R.
+                        <br>
+                        Design Principles and Practices. 2018. 
+                      </li>
+                    </ul>
+
+
+                    <h2>Courses</h2>
+
+
+                    <h2>Resume</h2>
+                        <p>You can checkout my resume <a href="files/resume.pdf" class="visible-link">here</a>.</p>
+                </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
- <footer style="margin-top:100px;">
+ <footer style="margin-top:100px; color: #3381e8;">
      <div class="container">
          <div class="row">
              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                  <ul class="list-inline text-center">
                      <li>
-                         <a href="https://github.com/parsoyaarihant">
-                             <span class="fa-stack fa-lg">
-                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                             </span>
+                         <a href="mailto:parsoyaarihant@gmail.com">
+                             <img src="images/email_icon.png">
                          </a>
                      </li>
                      <li>
-                         <a href="mailto:parsoyaarihant@gmail.com">
-                             <span class="fa-stack fa-lg">
-                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                 <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                             </span>
+                        <a href="https://github.com/parsoyaarihant">
+                             <img src="images/github_icon.png">
+                         </a>
+                         
+                     </li>
+                     <li>
+                         <a href="https://medium.com/@parsoyaarihant/latest">
+                             <img src="images/medium_icon.png">
                          </a>
                      </li>
+                     <!--
+                     <li>
+                         <a href="">
+                             <img src="images/linkedin_icon.png">
+                         </a>
+                     </li>
+                     -->
                  </ul>
              </div>
          </div>
