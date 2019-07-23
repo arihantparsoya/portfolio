@@ -1,0 +1,129 @@
+@font-face {
+  font-family: Source_Sans_Pro_Light;
+  src: url(Source_Sans_Pro/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+  font-family: Source_Sans_Pro_Light_Italic;
+  src: url(Source_Sans_Pro/SourceSansPro-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Source_Sans_Pro_Bold;
+  src: url(Source_Sans_Pro/SourceSansPro-Bold.ttf);
+}
+
+html, body{
+    margin:0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Source_Sans_Pro_Light;
+}
+
+.nav .selected{
+    font-family: Source_Sans_Pro_Bold;
+}
+
+.cover{
+    max-width: 1200;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.container{
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.heading{
+    font-family: Source_Sans_Pro_Bold;
+    font-size: 25px;
+}
+
+a{
+    text-decoration:none;
+    color: inherit;
+}
+
+
+.bio{
+  max-width: 750px;
+}
+
+.bio img{
+  width: 150px;
+  border-radius: 75px;
+}
+
+.bio a{
+  font-weight: bold;
+}
+
+.bio .row .contact{
+    width: 150px;
+    float: left;
+    text-align: center;
+}
+
+.bio .row .text{
+    font-size: 17px;
+    padding-left: 20px;
+    width: 550px;
+    float: left;
+}
+
+.project{
+    max-width: 650px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.project a{
+    font-weight: bold;
+}
+
+.project .image{
+    width: 150px;
+    float: left;
+}
+
+.project .image img{
+    width: 150px;
+    border-radius: 10px;
+}
+
+.project .text{
+    width: 500px;
+    float:left;
+}
+
+.project .title{
+    font-family: Source_Sans_Pro_Bold;
+    padding-left: 10px;
+}
+
+.project .abstract{
+    font-family: Source_Sans_Pro_Light_Italic;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.project .links{
+    color: #3232ff;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: Source_Sans_Pro_Light;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 1200px) {
+  .cover {
+     width: 100%;
+  }
+}
