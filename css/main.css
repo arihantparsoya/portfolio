@@ -42,7 +42,6 @@ html, body{
 
 .heading{
     font-family: Source_Sans_Pro_Bold;
-    font-size: 25px;
 }
 
 a{
@@ -53,6 +52,7 @@ a{
 
 .bio{
   max-width: 750px;
+  font-size: 17px;
 }
 
 .bio img{
@@ -71,7 +71,6 @@ a{
 }
 
 .bio .row .text{
-    font-size: 17px;
     width: 550px;
     float: left;
     padding-left:20px;
@@ -134,6 +133,14 @@ a{
 }
 
 @media screen and (max-width: 1200px) {
+  html, body{
+    font-size: 36px;
+  }
+
+  .bio{
+    font-size: 34px;
+  }
+
   .cover {
      width: 100%;
   }
