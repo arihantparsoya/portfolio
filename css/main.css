@@ -24,16 +24,20 @@ html, body{
     font-family: Source_Sans_Pro_Bold;
 }
 
+.nav{
+  padding: 20px;
+}
+
 .cover{
     max-width: 1200;
     margin: 0 auto;
-    padding: 20px;
     overflow-x: hidden;
 }
 
 .container{
-    margin-top: 50px;
     font-size: 15px;
+    margin: 20px;
+    margin-top: 50px;
 }
 
 .heading{
@@ -68,10 +72,17 @@ a{
 
 .bio .row .text{
     font-size: 17px;
-    padding-left: 20px;
     width: 550px;
     float: left;
+    padding-left:20px;
 }
+
+
+.bio .row .contact .contact-details{
+  text-align: left;
+}
+
+
 
 .project{
     max-width: 650px;
@@ -125,5 +136,40 @@ a{
 @media screen and (max-width: 1200px) {
   .cover {
      width: 100%;
+  }
+
+  .bio{
+    max-width: none;
+  }
+
+  .bio .row .contact{
+    width:100%;
+    text-align: center; 
+    float: none;
+  }
+
+  .bio .row .text{
+    margin-top: 20px;
+    width:100%;
+    padding-left:0px;
+  }
+
+  .bio .row .contact .contact-details{
+    text-align: center;
+  }
+
+
+  .project{
+    margin-top: 50px;
+    max-width: none;
+    text-align: center;
+  }
+
+  .project .image{
+    width: 100%;
+  }
+
+  .project .text{
+    width: 100%;
   }
 }
