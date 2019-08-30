@@ -52,7 +52,7 @@ a{
 
 
 .bio{
-  max-width: 750px;
+  max-width: 800px;
   font-size: 17px;
 }
 
@@ -66,7 +66,7 @@ a{
 }
 
 .bio .row .contact{
-    width: 150px;
+    width: 200px;
     float: left;
     text-align: center;
 }
@@ -74,13 +74,71 @@ a{
 .bio .row .text{
     width: 550px;
     float: left;
-    padding-left:20px;
+    padding-left:40px;
 }
 
 
 .bio .row .contact .contact-details{
   text-align: left;
 }
+
+
+.paper{
+    max-width: 650px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.paper a{
+    font-weight: bold;
+}
+
+.paper .text{
+    width: 500px;
+    float:left;
+}
+
+.paper .image{
+    width: 150px;
+    float: left;
+    text-align: right;
+}
+
+.paper .image img{
+    width: 150px;
+    border-radius: 10px;
+}
+
+.paper .title{
+    font-family: Source_Sans_Pro_Bold;
+    padding-left: 10px;
+}
+
+.paper .authors{
+    font-family: Source_Sans_Pro_Light;
+    padding-left: 10px;
+}
+
+.paper .conference{
+    font-family: Source_Sans_Pro_Light;
+    padding-left: 10px;
+}
+
+.paper .abstract{
+    font-family: Source_Sans_Pro_Light_Italic;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.paper .links{
+    color: #3232ff;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: Source_Sans_Pro_Light;
+}
+
+
+
 
 
 
