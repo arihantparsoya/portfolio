@@ -185,6 +185,19 @@ a{
     font-family: Source_Sans_Pro_Light;
 }
 
+.award{
+  color: white;
+  background: #3232ff;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.award a{
+  font-weight: normal;
+}
+
 .row:after {
   content: "";
   display: table;
